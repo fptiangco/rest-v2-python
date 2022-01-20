@@ -19,8 +19,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build
       run: |
-        docker build . -t ${{secrets.DOCKER_USER}}/${{github.event.repository.name}}:${{github.ref_name}}
+        docker build . -t ${{secrets.DOCKER_USER}}/${{github.event.repository.name}}:latest -t ${{secrets.DOCKER_USER}}/${{github.event.repository.name}}:${{github.ref_name}}
     - name: docker push
       run: |
-        docker push ${{secrets.DOCKER_USER}}/${{github.event.repository.name}}:${{github.ref_name}}
-        docker push ${{secrets.DOCKER_USER}}/${{github.event.repository.name}}:latest
+        docker push ${{secrets.DOCKER_USER}}/${{github.event.repository.name}} --all-tags
