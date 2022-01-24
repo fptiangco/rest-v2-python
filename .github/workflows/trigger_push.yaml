@@ -1,0 +1,10 @@
+name: Push
+
+on:
+  push:
+jobs:
+  # 1. Test + CodeCoverage
+  test-codecov:
+    uses: fptiangco/github-actions-workflows/.github/workflows/test_codecov.yml@main
+    secrets:
+       codecovtoken: ${{ secrets.CODECOV_TOKEN }}

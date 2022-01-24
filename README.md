@@ -1,0 +1,1 @@
+[![codecov](https://codecov.io/gh/fptiangco/rest-v2-python/branch/main/graph/badge.svg?token=XBB48QQDSM)](https://codecov.io/gh/fptiangco/rest-v2-python)
