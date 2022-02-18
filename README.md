@@ -2,4 +2,4 @@
 
 [![Push](https://github.com/fptiangco/rest-v2-python/actions/workflows/trigger_push.yaml/badge.svg)](https://github.com/fptiangco/rest-v2-python/actions/workflows/trigger_push.yaml)
 
-Todo:
+[![Docker](https://img.shields.io/docker/cloud/build/fptiangco/rest-v2-python?label=Docker&style=flat)](https://hub.docker.com/r/fptiangco/rest-v2-python/builds)
