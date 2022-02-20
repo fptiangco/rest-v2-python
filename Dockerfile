@@ -1,5 +1,8 @@
 FROM python:alpine3.15
 
+# Security fixes
+RUN apk upgrade expat libuuid
+
 # Container setup
 ARG DOCKER_UNAME=container
 ARG DOCKER_UID=1000
