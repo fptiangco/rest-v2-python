@@ -2,7 +2,7 @@
 
 
 ### Quickstart
-* A utility service that only returns 'v2'
+* A utility service that returns 'v2'
 
 ##### Local flask run
 ```
