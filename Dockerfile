@@ -14,7 +14,7 @@ RUN adduser -S ${DOCKER_UNAME} -G ${DOCKER_UNAME} -u ${DOCKER_UID}
 # App setup
 RUN mkdir ${WORKDIR}
 WORKDIR ${WORKDIR}
-ADD ./src/requirements.txt ${WORKDIR}requirements.txt
+ADD requirements.txt ${WORKDIR}requirements.txt
 RUN pip install -r requirements.txt
 COPY ./src/ ${WORKDIR}
 
