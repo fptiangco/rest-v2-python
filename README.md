@@ -10,7 +10,7 @@
 ##### Local flask run
 ```
 # Install
-pip install -r src/requirements.txt
+pip install -r requirements.txt
 
 # Python package scan
 safety check
