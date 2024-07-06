@@ -1,4 +1,4 @@
-FROM python:3.8.17-alpine3.18
+FROM python:3.12.4-alpine3.20
 
 # Security fixes
 RUN apk upgrade expat libuuid
